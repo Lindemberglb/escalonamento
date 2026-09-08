@@ -1,0 +1,78 @@
+Script started on 2026-09-08 00:54:06-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="159" LINES="11"]
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ pwd
+[?2004l/home/guitolin/gllb
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ whoami
+[?2004lguitolin
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ date
+[?2004lTue Sep  8 00:54:13 -03 2026
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ make
+[?2004lmake: *** No targets specified and no makefile found.  Stop.
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7mls -la[27mls -la
+[?2004ltotal 24
+drwxr-xr-x  4 guitolin guitolin 4096 Sep  8 00:54 [0m[01;34m.[0m
+drwxr-x--- 11 guitolin guitolin 4096 Sep  8 00:53 [01;34m..[0m
+drwxr-xr-x  8 guitolin guitolin 4096 Sep  8 00:53 [01;34m.git[0m
+-rw-r--r--  1 guitolin guitolin  121 Sep  8 00:55 MAKEFILE
+-rw-r--r--  1 guitolin guitolin    0 Sep  8 00:52 README.MD
+-rw-r--r--  1 guitolin guitolin    0 Sep  8 00:54 evidencias.log
+-rw-r--r--  1 guitolin guitolin   68 Sep  8 00:55 main.c
+drwxr-xr-x  2 guitolin guitolin 4096 Sep  8 00:52 [01;34mtestes[0m
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 main.c -o scheduler
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ make clean
+[?2004lrm -f scheduler
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ git add .
+[?2004l[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ git commit -m "criei o makefie[Kle e a base do main.c"
+[?2004l[main d261d26] criei o makefile e a base do main.c
+ 3 files changed, 13 insertions(+)
+ create mode 100644 Makefile
+ rename MAKEFILE => evidencias.log (100%)
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ git psuh][K[K[K[Kush
+[?2004lEnumerating objects: 6, done.
+Counting objects:  16% (1/6)Counting objects:  33% (2/6)Counting objects:  50% (3/6)Counting objects:  66% (4/6)Counting objects:  83% (5/6)Counting objects: 100% (6/6)Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects:  33% (1/3)Compressing objects:  66% (2/3)Compressing objects: 100% (3/3)Compressing objects: 100% (3/3), done.
+Writing objects:  25% (1/4)Writing objects:  50% (2/4)Writing objects:  75% (3/4)Writing objects: 100% (4/4)Writing objects: 100% (4/4), 479 bytes | 239.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Lindemberglb/escalonamento.git
+   abce247..d261d26  main -> main
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ clear
+[?2004l[H[2J[3J[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [K]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [K]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 main.c -o scheduler
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler rate testes/voo.txt[27m./scheduler rate testes/voo.txt
+[?2004l[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ make clean
+[?2004lrm -f scheduler
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler[27m./scheduler
+[?2004lbash: ./scheduler: No such file or directory
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 main.c -o scheduler
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler[27m./scheduler
+[?2004lerro. quantidade de argumentos invalida
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler foo testes/voo.txt[27m./scheduler foo testes/voo.txt[C[1P testes/voo.txt[1P testes/voo.txt[1P testes/voo.txtk testes/voo.txts testes/voo.txtn testes/voo.txtd testes/voo.txti testes/voo.txtk testes/voo.txts testes/voo.txtm testes/voo.txt
+[?2004lerro. algoritmo invalido
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler rate testes/naoexiste.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./scheduler rate testes/naoexiste.txt[1Pe.txt[1Pe.txt[1Pe.txt[1Pe.txt[C[1P.txt[1P.txt[1P.txt[1P.txt[1P.txtn.txtj.txtc.txtk.txtm.txtc.txte.txt
+[?2004lerro. nao foi possivel abrir o arquivo
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler rate testes/naoexiste.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./scheduler rate testes/naoexiste.txt[K[K[K[K[K[K[K[K[K[K[K[K[Kinvalido.txt
+[?2004lerro. burst maior que deadline
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler rate testes/invalido.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./scheduler rate testes/invalido.txt
+[?2004lerro. numero de campos invalido
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ git status
+[?2004lOn branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	[31mmodified:   evidencias.log[m
+	[31mmodified:   main.c[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	[31mscheduler[m
+	[31mtestes/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ exit
+[?2004lexit
+
+Script done on 2026-09-08 01:33:42-03:00 [COMMAND_EXIT_CODE="0"]
