@@ -48,3 +48,21 @@ int instancia_perdeu_deadline(const Instancia *instancia, int tempo){
     }
     return 0;
 }
+
+int deve_chegar(Tarefa *tarefa, int tempo){
+    if (tempo < 0){
+        return 0;
+    }
+    return tempo % tarefa->periodo == 0;
+}
+
+void atualizar_instancia(Instancia *instancia, int tempo){
+    if (instancia->concluida || instancia->perdida){
+        return;
+    }
+
+    if (tempo >= instancia->deadline && instancia->restante > 0){
+        instancia->restante = 0;
+        instancia->perdida = 1;
+    }
+}

@@ -1,14 +1,8 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -std=c11
 
-scheduler: main.o tarefa.o
-	$(CC) $(CFLAGS) main.o tarefa.o -o scheduler
-
-main.o: main.c tarefa.h
-	$(CC) $(CFLAGS) -c main.c
-
-tarefa.o: tarefa.c tarefa.h
-	$(CC) $(CFLAGS) -c tarefa.c
+scheduler: main.c tarefa.c
+	$(CC) $(CFLAGS) main.c tarefa.c -o scheduler
 
 clean:
-	rm -f scheduler *.o
+	rm -f scheduler

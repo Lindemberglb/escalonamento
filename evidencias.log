@@ -89,4 +89,34 @@ Script started on 2026-09-08 01:33:52-03:00 [TERM="xterm-256color" TTY="/dev/pts
 Counting objects:  10% (1/10)Counting objects:  20% (2/10)Counting objects:  30% (3/10)Counting objects:  40% (4/10)Counting objects:  50% (5/10)Counting objects:  60% (6/10)Counting objects:  70% (7/10)Counting objects:  80% (8/10)Counting objects:  90% (9/10)Counting objects: 100% (10/10)Counting objects: 100% (10/10), done.
 Delta compression using up to 8 threads
 Compressing objects:  20% (1/5)Compressing objects:  40% (2/5)Compressing objects:  60% (3/5)Compressing objects:  80% (4/5)Compressing objects: 100% (5/5)Compressing objects: 100% (5/5), done.
-Writing objects:  14% (1/7)Writing objects
+Writing objects:  14% (1/7)Writing objects:  28% (2/7)Writing objects:  42% (3/7)Writing objects:  57% (4/7)Writing objects:  71% (5/7)Writing objects:  85% (6/7)Writing objects: 100% (7/7)Writing objects: 100% (7/7), 2.73 KiB | 2.73 MiB/s, done.
+Total 7 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Lindemberglb/escalonamento.git
+   d261d26..6c8a7a2  main -> main
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 -c main.c
+gcc -Wall -Wextra -std=c11 -c tarefa.c
+gcc -Wall -Wextra -std=c11 main.o tarefa.o -o scheduler
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler rate testes/voo.txt[27m./scheduler rate testes/voo.txt
+[?2004l[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ ./scheduler gdy teste/voo.txt
+[?2004lerro. algoritmo invalido
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ /[K./cs[K[Kscheduler are[K[K[Krate teste/volsdnk.txt
+[?2004lerro. nao foi possivel abrir o arquivo
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ ./scheduler rate[K[K[Kate teste/invalido.txt
+[?2004lerro. nao foi possivel abrir o arquivo
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler rate teste/volsdnk.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./scheduler rate teste/volsdnk.txts/volsdnk.txt
+[?2004lerro. nao foi possivel abrir o arquivo
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler rate teste/volsdnk.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./scheduler rate teste/volsdnk.txt[Cs/volsdnk.txt[C[C[C[C[C[C[C[C[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txti.txtn.txtv.txta.txtl.txti.txtd.txto.txt
+[?2004lerro. numero de campos invalido
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler edf testes/voo.txt[27m./scheduler edf testes/voo.txt
+[?2004l[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler edf testes/voo.txt[27m./scheduler edf testes/voo.txt[1P.txt[1P.txt[1P.txti.txtn.txta.txtl.txti.txtd.txto.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txtv.txta.txtl.txti.txtd.txto.txt
+[?2004lerro. numero de campos invalido
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ git add .
+[?2004l[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ git reverse --hard
+[?2004lgit: 'reverse' is not a git command. See 'git --help'.
+
+The most similar command is
+	rev-parse
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ make clean
+[?2004lrm -f scheduler *.o
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ git commit -m ~[K"criei um [K[K[K[K o tarefa.h que define[K[K[K[K[K[K[K[K[K[K[K[Kc que cria e veri[K[K[K[K[K[Kas instancuas[K[K[Kuas[K[K[Kias e tarefa.hotarefa.h tarefa.h[C[C[C[C[C[C[C[C que ded[Kfine p[Ko que vai ser usado. tamben[Km alterei o makefile par a[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
