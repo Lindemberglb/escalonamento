@@ -119,3 +119,4 @@ int main(int argc, char *argv[]){
     liberar_instancias(&controle);
     free(tarefas);
     return 0;
+}

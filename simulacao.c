@@ -58,3 +58,12 @@ void gerar_instancias_no_tempo(controle_instancias *controle, Tarefa *tarefas, i
         }
     }
 }
+
+int existem_instancias_prontas(controle_instancias *controle, int tempo){
+    for (int i = 0; i < controle->quantidade; i++){
+        if (instancia_pronta(&controle->instancias[i], tempo)){
+            return 1;
+        }
+    }
+    return 0;
+}

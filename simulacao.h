@@ -13,5 +13,6 @@ int adicionar_instancia(controle_instancias *controle, Tarefa *tarefa, int chega
 void atualizar_deadlines(controle_instancias *controle, int tempo);
 void liberar_instancias(controle_instancias *controle);
 void gerar_instancias_no_tempo(controle_instancias *controle, Tarefa *tarefas, int quantidade_tarefas, int tempo);
+int existem_instancias_prontas(controle_instancias *controle, int tempo);
 
 #endif
