@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include "tarefa.h"
+#include "simulacao.h"
 
 int main(int argc, char *argv[]){
     FILE *arquivo;
@@ -106,7 +107,15 @@ int main(int argc, char *argv[]){
         return 1;
     }
 
-    free(tarefas);
+    controle_instancias controle;
+    int tempo;
 
+    inicializar_instancias(&controle);
+
+    for (tempo = 0; tempo < tempo_total; tempo++){
+        gerar_instancias_no_tempo(&controle, tarefas, quantidade_tarefas, tempo);
+    }
+
+    liberar_instancias(&controle);
+    free(tarefas);
     return 0;
-}
