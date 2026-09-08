@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "tarefa.h"
 
 Instancia criar_instancia(Tarefa *tarefa, int chegada){
