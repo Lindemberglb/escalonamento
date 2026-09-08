@@ -1,14 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
-typedef struct Tarefa{
-    char nome[100];
-    int periodo;
-    int deadline;
-    int burst;
-    int ordem;
-}Tarefa;
+#include "tarefa.h"
 
 int main(int argc, char *argv[]){
     FILE *arquivo;
