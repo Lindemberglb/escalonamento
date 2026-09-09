@@ -119,4 +119,33 @@ The most similar command is
 	rev-parse
 [?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ make clean
 [?2004lrm -f scheduler *.o
-[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ git commit -m ~[K"criei um [K[K[K[K o tarefa.h que define[K[K[K[K[K[K[K[K[K[K[K[Kc que cria e veri[K[K[K[K[K[Kas instancuas[K[K[Kuas[K[K[Kias e tarefa.hotarefa.h tarefa.h[C[C[C[C[C[C[C[C que ded[Kfine p[Ko que vai ser usado. tamben[Km alterei o makefile par a[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ git commit -m ~[K"criei um [K[K[K[K o tarefa.h que define[K[K[K[K[K[K[K[K[K[K[K[Kc que cria e veri[K[K[K[K[K[Kas instancuas[K[K[Kuas[K[K[Kias e tarefa.hotarefa.h tarefa.h[C[C[C[C[C[C[C[C que ded[Kfine p[Ko que vai ser usado. tamben[Km alterei o makefile par a[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[CScript started on 2026-09-08 20:26:38-03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="159" LINES="17"]
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 main.c tarefa.c simulacao.c -o scheduler
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ ./esche[K[K[K[K[Kscheduler edf 1 2 3[K[K[K[K[K[K tet[Kstes.[K/voo.txt
+[?2004l[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ make clean
+[?2004lrm -f scheduler
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ git add .
+[?2004l[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ git commit -m "ae[K[Kcorrigi y[Kum erro [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kapaguei um arquivo [K[K[K[K[K[K[K[K[K[K[Kum arquivo executavel que eu esqueci dentro d pasta e [K[K[K[K[K[K[K[K[Ka pasat e [K[K[K[K[K[Ksta e fz[Ki commi[K[K[K[K[K[Kz commit"
+[?2004l[main 09c68ed] apaguei um arquivo executavel que eu esqueci dentro da pasta e fiz commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100755 scheduler
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ git push
+[?2004lEnumerating objects: 12, done.
+Counting objects:   8% (1/12)Counting objects:  16% (2/12)Counting objects:  25% (3/12)Counting objects:  33% (4/12)Counting objects:  41% (5/12)Counting objects:  50% (6/12)Counting objects:  58% (7/12)Counting objects:  66% (8/12)Counting objects:  75% (9/12)Counting objects:  83% (10/12)Counting objects:  91% (11/12)Counting objects: 100% (12/12)Counting objects: 100% (12/12), done.
+Delta compression using up to 8 threads
+Compressing objects:  12% (1/8)Compressing objects:  25% (2/8)Compressing objects:  37% (3/8)Compressing objects:  50% (4/8)Compressing objects:  62% (5/8)Compressing objects:  75% (6/8)Compressing objects:  87% (7/8)Compressing objects: 100% (8/8)Compressing objects: 100% (8/8), done.
+Writing objects:  12% (1/8)Writing objects:  25% (2/8)Writing objects:  50% (4/8)Writing objects:  62% (5/8)Writing objects:  75% (6/8)Writing objects:  87% (7/8)Writing objects: 100% (8/8)Writing objects: 100% (8/8), 5.33 KiB | 2.66 MiB/s, done.
+Total 8 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas:   0% (0/4)[Kremote: Resolving deltas:  25% (1/4)[Kremote: Resolving deltas:  50% (2/4)[Kremote: Resolving deltas:  75% (3/4)[Kremote: Resolving deltas: 100% (4/4)[Kremote: Resolving deltas: 100% (4/4), completed with 3 local objects.[K
+To https://github.com/Lindemberglb/escalonamento.git
+   bcb8baf..09c68ed  main -> main
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ make [K
+[?2004lgcc -Wall -Wextra -std=c11 main.c tarefa.c simulacao.c -o scheduler
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler rate testes/voo.txt[27m./scheduler rate testes/voo.txt
+[?2004l[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ scriot[K[Kpt -a evidenvia[K[K[Kcias.log
+[?2004lScript started, output log file is 'evidencias.log'.
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ make
+[?2004lmake: 'scheduler' is up to date.
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ mak[K[K[K[7m./scheduler rate testes/voo.txt[27m./scheduler rate testes/voo.txt
+[?2004l[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler rate testes/voo.txt[27m[1P.

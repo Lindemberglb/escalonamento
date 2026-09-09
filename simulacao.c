@@ -67,3 +67,12 @@ int existem_instancias_prontas(controle_instancias *controle, int tempo){
     }
     return 0;
 }
+
+int encontrar_instancia_pronta(controle_instancias *controle, int tempo){
+    for (int i = 0; i < controle->quantidade; i++){
+        if (instancia_pronta(&controle->instancias[i], tempo)){
+            return i;
+        }
+    }
+    return -1;
+}
