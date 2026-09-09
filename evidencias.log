@@ -254,4 +254,27 @@ To https://github.com/Lindemberglb/escalonamento.git
 [?2004lrm -f scheduler
 [?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ make
 [?2004lgcc -Wall -Wextra -std=c11 main.c tarefa.c simulacao.c resultado.c -o scheduler
-[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/g
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ ./scheduler edf eifeim
+[?2004lerro. nao foi possivel abrir o arquivo
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ ./scheduler pdf trest[K[K[K[K[K[K[K[K[Knke
+[?2004lerro. quantidade de argumentos invalida
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ ./scheduler edf testes/voo.txt
+[?2004l[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ make clean
+[?2004lrm -f scheduler
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ make
+[?2004lgcc -Wall -Wextra -std=c11 main.c tarefa.c simulacao.c resultado.c -o scheduler
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ ./scheduler edf testes;[K/voo.txt
+[?2004l[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ make clean
+[?2004lrm -f scheduler
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ git add ,[K.
+[?2004l[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ git commit -m "[7mregistrar qual instância executou em cada instante[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cregistrar qual instância executou em cada instante[C[1@d[1P[1@a[1@d[1@c[1@i[1@o[1@ [1@e[1@i[1P[1P[1P[1@n[1@e[1@i[1@ [1@o[1@s[1@ [1@a[C[1@r[1@q[1@u[1@i[1@o[1@v[1P[1P[1@v[1@o[1@s[1@ [C[1@r[1@e[1@s[1@l[1P[1@u[1@l[1@t[1@a[1@o[1@d[1P[1P[1@d[1@o[1@.[1@c[1@ [1@e[1@ [C[1@r[1@e[1@s[1@u[1@l[1@t[1@a[1@d[1@o[1@.[1@h[1@ [1@e[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1P[1@q[1@u[1@e[C[1@ [1@a[1@j[1@u[1@d[1@a[1@m[C[1@ [1@e[1P[1@a[C[1@ [1@r[1@e[1@g[1@i[1@s[1@t[1@r[1@a[1@r[C[1@ [1P[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[1P[1@r[1@e[C[C[C[C[C[C[C[1P[1@m[1@i[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C"
+[?2004l[main 7a1f0cf] adicionei resultado.c e resultado.h que registram qual instância executou em cada instante
+ 5 files changed, 65 insertions(+), 3 deletions(-)
+ create mode 100644 resultado.c
+ create mode 100644 resultado.h
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ git push
+[?2004lEnumerating objects: 11, done.
+Counting objects:   9% (1/11)Counting objects:  18% (2/11)Counting objects:  27% (3/11)Counting objects:  36% (4/11)Counting objects:  45% (5/11)Counting objects:  54% (6/11)Counting objects:  63% (7/11)Counting objects:  72% (8/11)Counting objects:  81% (9/11)Counting objects:  90% (10/11)Counting objects: 100% (11/11)Counting objects: 100% (11/11), done.
+Delta compression using up to 8 threads
+Compressing objects:  14% (1/7)Compressing objects:  28% (2/7)Compressing objects:  42% (3/7)Compressing objects:  57% (4/7)Compressing objects:  71% (5/7)Compressing objects:  85% (6/7)Compressing objects: 100% (7/7)Compressing objects: 100% (7/7), done.
+Writing objects:  14% (1/7)Writing objects:  28% (2/7)Writing objects:  42% (3/7)Writing objects:  57% (4/7)Writing objects:  71% (5/7)Writing objects:  85% (6/7)Writ
