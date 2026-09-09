@@ -1,6 +1,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include "simulacao.h"
 
 void inicializar_instancias(controle_instancias *controle){
@@ -68,11 +69,39 @@ int existem_instancias_prontas(controle_instancias *controle, int tempo){
     return 0;
 }
 
-int encontrar_instancia_pronta(controle_instancias *controle, int tempo){
+int selecionar_instancia(controle_instancias *controle, int tempo, char *algoritmo){
+    int melhor = 0;
+    int encontrou = 0;
+
     for (int i = 0; i < controle->quantidade; i++){
         if (instancia_pronta(&controle->instancias[i], tempo)){
-            return i;
+            if (encontrou == 0){
+                melhor = i;
+                encontrou = 1;
+            }
+
+            else if (strcmp(algoritmo, "rate") == 0){
+                if (controle->instancias[i].tarefa->periodo < controle->instancias[melhor].tarefa->periodo){
+                    melhor = i;
+                }
+
+                else if (controle->instancias[i].tarefa->periodo ==controle->instancias[melhor].tarefa->periodo){
+                    if (controle->instancias[i].tarefa->ordem < controle->instancias[melhor].tarefa->ordem){
+                        melhor = i;
+                    }
+                }
+            }
+
+                else if (controle->instancias[i].deadline <controle->instancias[melhor].deadline){
+                    melhor = i;
+                }
+
+                else if (controle->instancias[i].deadline ==controle->instancias[melhor].deadline){
+                    if (controle->instancias[i].tarefa->ordem < controle->instancias[melhor].tarefa->ordem){
+                        melhor = i;
+                    }
+                }
+            }
         }
-    }
-    return -1;
+    return melhor;
 }
