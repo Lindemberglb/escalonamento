@@ -67,3 +67,13 @@ void atualizar_instancia(Instancia *instancia, int tempo){
         instancia->perdida = 1;
     }
 }
+
+void executar_instancia(Instancia *instancia){
+    if (instancia->restante > 0){
+        instancia->restante--;
+    }
+
+    if (instancia->restante == 0){
+        instancia->concluida = 1;
+    }
+}

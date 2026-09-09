@@ -23,5 +23,6 @@ int instancia_pronta(const Instancia *instancia, int tempo);
 int instancia_perdeu_deadline(const Instancia *instancia, int tempo);
 int deve_chegar(Tarefa *tarefa, int tempo);
 void atualizar_instancia(Instancia *instancia, int tempo);
+void executar_instancia(Instancia *instancia);
 
 #endif
