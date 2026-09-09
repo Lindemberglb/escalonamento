@@ -50,14 +50,15 @@ void liberar_instancias(controle_instancias *controle){
     controle->capacidade = 0;
 }
 
-void gerar_instancias_no_tempo(controle_instancias *controle, Tarefa *tarefas, int quantidade_tarefas, int tempo){
+int gerar_instancias_no_tempo(controle_instancias *controle, Tarefa *tarefas, int quantidade_tarefas, int tempo){
     for (int i = 0; i < quantidade_tarefas; i++){
         if (deve_chegar(&tarefas[i], tempo)){
             if (adicionar_instancia(controle, &tarefas[i], tempo) == 0){
-                return;
+                return 0;
             }
         }
     }
+    return 1;
 }
 
 int existem_instancias_prontas(controle_instancias *controle, int tempo){

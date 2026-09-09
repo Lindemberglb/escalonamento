@@ -124,18 +124,25 @@ int main(int argc, char *argv[]){
         return 1;
     }
 
-    for (tempo = 0; tempo < tempo_total; tempo++){
-        gerar_instancias_no_tempo(&controle, tarefas, quantidade_tarefas, tempo);
-        atualizar_deadlines(&controle, tempo);
-
-        if (existem_instancias_prontas(&controle, tempo)){
-            int escolhida;
-
-            escolhida = selecionar_instancia(&controle, tempo, argv[1]);
-            registrar_execucao(registros, tempo, escolhida);
-            executar_instancia(&controle.instancias[escolhida]);
-        }
+for (tempo = 0; tempo < tempo_total; tempo++){
+    if (gerar_instancias_no_tempo(&controle, tarefas, quantidade_tarefas, tempo) == 0){
+        fprintf(stderr, "erro. nao foi possivel criar uma instancia\n");
+        free(registros);
+        liberar_instancias(&controle);
+        free(tarefas);
+        return 1;
     }
+
+    atualizar_deadlines(&controle, tempo);
+
+    if (existem_instancias_prontas(&controle, tempo)){
+        int escolhida;
+        escolhida = selecionar_instancia(&controle, tempo, argv[1]);
+
+        registrar_execucao(registros, tempo, escolhida);
+        executar_instancia(&controle.instancias[escolhida]);
+    }
+}
 
     char nome_saida[30];
 
