@@ -114,6 +114,14 @@ int main(int argc, char *argv[]){
 
     for (tempo = 0; tempo < tempo_total; tempo++){
         gerar_instancias_no_tempo(&controle, tarefas, quantidade_tarefas, tempo);
+        atualizar_deadlines(&controle, tempo);
+
+        if (existem_instancias_prontas(&controle, tempo)){
+            int escolhida;
+
+            escolhida = selecionar_instancia(&controle, tempo, argv[1]);
+            executar_instancia(&controle.instancias[escolhida]);
+        }
     }
 
     liberar_instancias(&controle);
