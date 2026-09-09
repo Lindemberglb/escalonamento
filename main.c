@@ -137,6 +137,25 @@ int main(int argc, char *argv[]){
         }
     }
 
+    char nome_saida[30];
+
+    if (strcmp(argv[1], "rate") == 0){
+        strcpy(nome_saida, "rate_gllb.out");
+    }
+
+    else{
+        strcpy(nome_saida, "edf_gllb.out");
+    }
+
+    resultado = gerar_saida(nome_saida, argv[1], &controle, tarefas, quantidade_tarefas, registros, tempo_total);
+    if (resultado == 0){
+        fprintf(stderr, "erro. nao foi possivel criar o arquivo de saida\n");
+        free(registros);
+        liberar_instancias(&controle);
+        free(tarefas);
+        return 1;
+    }
+
     free(registros);
     liberar_instancias(&controle);
     free(tarefas);
