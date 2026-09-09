@@ -9,6 +9,5 @@ typedef struct RegistroExecucao{
 } RegistroExecucao;
 
 void registrar_execucao(RegistroExecucao *registros, int tempo, int instancia);
-char estado_instancia(Instancia *instancia);
 
 #endif
