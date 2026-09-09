@@ -3,6 +3,7 @@
 #include <string.h>
 #include "tarefa.h"
 #include "simulacao.h"
+#include "resultado.h"
 
 int main(int argc, char *argv[]){
     FILE *arquivo;
@@ -112,6 +113,17 @@ int main(int argc, char *argv[]){
 
     inicializar_instancias(&controle);
 
+    RegistroExecucao *registros;
+
+    registros = calloc(tempo_total, sizeof(RegistroExecucao));
+
+    if (registros == NULL){
+        fprintf(stderr, "erro. nao foi possivel reservar memoria\n");
+        liberar_instancias(&controle);
+        free(tarefas);
+        return 1;
+    }
+
     for (tempo = 0; tempo < tempo_total; tempo++){
         gerar_instancias_no_tempo(&controle, tarefas, quantidade_tarefas, tempo);
         atualizar_deadlines(&controle, tempo);
@@ -120,10 +132,12 @@ int main(int argc, char *argv[]){
             int escolhida;
 
             escolhida = selecionar_instancia(&controle, tempo, argv[1]);
+            registrar_execucao(registros, tempo, escolhida);
             executar_instancia(&controle.instancias[escolhida]);
         }
     }
 
+    free(registros);
     liberar_instancias(&controle);
     free(tarefas);
     return 0;
