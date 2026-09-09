@@ -424,4 +424,34 @@ To https://github.com/Lindemberglb/escalonamento.git
 [?2004lerro. valores devem ser positivos
 [?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler rate testes/deadline_maior_periodo.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./scheduler rate testes/deadline_maior_periodo.txt
 [?2004lerro. deadline maior que periodo
-[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler rate testes/burst_maior_deadline.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler rate testes/burst_maior_deadline.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./scheduler rate testes/burst_maior_deadline.txt
+[?2004lerro. burst maior que deadline
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler rate testes/nao_numerico.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./scheduler rate testes/nao_numerico.txt
+[?2004lerro. numero de campos invalido
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ make celan[K[K[K[K[K[K[K[K[K[K[7m./scheduler rate testes/nao_numerico.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./scheduler rate testes/nao_numerico.txt
+[?2004lerro. numero de campos invalido
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler rate testes/nao_positivo.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./scheduler rate testes/nao_positivo.txt
+[?2004lerro. valores devem ser positivos
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler rate testes/deadline_maior_periodo.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./scheduler rate testes/deadline_maior_periodo.txt
+[?2004lerro. deadline maior que periodo
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ [7m./scheduler rate testes/burst_maior_deadline.txt[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C./scheduler rate testes/burst_maior_deadline.txt
+[?2004lerro. burst maior que deadline
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ make clean
+[?2004lrm -f scheduler
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ git add .
+[?2004l[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ git commit -m "adcionei di[K[Karquio[Kvos de teste e xe[K[Kexceutei diversos testes para garamtir[K[K[K[Kntir[1@i[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1@e[1@c[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C que os [K[K[K[K a implementação estea[Kja corrtea"[K[K[K[Keta"
+[?2004l[main 938d2c2] adicionei arquivos de teste e executei diversos testes para garantir que a implementação esteja correta
+ 8 files changed, 92 insertions(+), 1 deletion(-)
+ create mode 100644 testes/burst_maior_deadline.txt
+ create mode 100644 testes/comparacao.txt
+ create mode 100644 testes/deadline_maior_periodo.txt
+ create mode 100644 testes/desempate.txt
+ create mode 100644 testes/killed.txt
+ create mode 100644 testes/nao_numerico.txt
+ create mode 100644 testes/nao_positivo.txt
+[?2004h]0;guitolin@guitolinnote: ~/gllb[01;32mguitolin@guitolinnote[00m:[01;34m~/gllb[00m$ git push
+[?2004lEnumerating objects: 14, done.
+Counting objects:   7% (1/14)Counting objects:  14% (2/14)Counting objects:  21% (3/14)Counting objects:  28% (4/14)Counting objects:  35% (5/14)Counting objects:  42% (6/14)Counting objects:  50% (7/14)Counting objects:  57% (8/14)Counting objects:  64% (9/14)Counting objects:  71% (10/14)Counting objects:  78% (11/14)Counting objects:  85% (12/14)Counting objects:  92% (13/14)Counting objects: 100% (14/14)Counting objects: 100% (14/14), done.
+Delta compression using up to 8 threads
+Compressing objects:  25% (1/4)Compressing objects:  50% (2/4)Compressing objects:  75% (3/4)Compressing objects: 100% (4/4)Compressing objects: 100% (4/4), done.
+Writing objects:   9% (1/11)Writing
